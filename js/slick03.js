@@ -24,7 +24,7 @@ $(function () {
         $('.num').css({ backgroundPositionY: -100 * createNum + "px" });
     });
 
-    //idx : 번호 받아올때
+    //idx : 번호 받아올 때
 
     $('.custom_arrow i:nth-child(1)').on('click', function () {
         $('.main_slider').slick('slickPrev');
