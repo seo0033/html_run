@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullpage 01</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fullpage.min.css">
+    <style>
+        .fp-watermark {
+            display: none;
+        }
+
+        .section {
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 27px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+
+        .section p {
+            font-size: 15px;
+            font-weight: 300
+        }
+
+        .section:nth-child(2n-1) {
+            background: #f9f9f9;
+        }
+
+        h1 {
+            position: fixed;
+            inset: 50px auto auto 50px;
+            z-index: 999;
+        }
+
+        .cover_toggle {
+            position: fixed;
+            inset: 50px 50px auto auto;
+            z-index: 999;
+
+            padding: 5px;
+            background: #333;
+            color: #fff;
+            border-radius: 2px;
+            font-size: 16px;
+        }
+
+        .toTop {
+            position: fixed;
+            inset: auto 50px 50px auto;
+            z-index: 999;
+
+            padding: 5px;
+            background: #333;
+            color: #fff;
+            border-radius: 2px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1>
+            <a href="">
+                2022 seo0's portfolio
+            </a>
+        </h1>
+        <div class="cover_toggle">
+            <a href="">
+                <i class="xi-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <main id="portfolio">
+        <section class="section portfolio01">
+            <div class="inner">
+                <h2>01. Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur animi dolore obcaecati rerum
+                    unde necessitatibus!</p>
+            </div>
+        </section>
+        <section class="section portfolio02">
+            <div class="inner">
+                <h2>02. Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur animi dolore obcaecati rerum
+                    unde necessitatibus!</p>
+            </div>
+        </section>
+        <section class="section portfolio03">
+            <div class="inner">
+                <h2>03. Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur animi dolore obcaecati rerum
+                    unde necessitatibus!</p>
+            </div>
+        </section>
+        <section class="section portfolio04">
+            <div class="inner">
+                <h2>04. Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur animi dolore obcaecati rerum
+                    unde necessitatibus!</p>
+            </div>
+        </section>
+        <section class="section portfolio05">
+            <div class="inner">
+                <h2>05. Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur animi dolore obcaecati rerum
+                    unde necessitatibus!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="toTop">
+            <a href="">
+                <i class="xi-arrow-top"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/fullpage.min.js"></script>
+    <script>
+        $(function () {
+            $('#portfolio').fullpage({
+                // navigation: true,
+                anchors:['page01','page02']
+            });
+        }); //the end
+
+    </script>
+
+</body>
+
+</html>
