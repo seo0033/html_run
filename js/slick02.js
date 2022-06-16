@@ -5,7 +5,7 @@ $(function () {
         $('.slide01 .content>li').eq(c).addClass('on').siblings().removeClass('on')
     });
 
-    // eq(js) = nth:child()(css)
+    // eq(in js) = nth:child()(in css)
 
     $('.main_slider').slick({
         arrows: false,

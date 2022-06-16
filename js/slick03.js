@@ -33,10 +33,10 @@ $(function () {
         $('.main_slider').slick('slickNext');
     });
     $('.custom_play i:nth-child(1)').on('click', function () {
-        $('.main_slider').slick('slickPrev');
+        $('.main_slider').slick('slickPause');
     });
-    $('.custom_play i:nth-child()').on('click', function () {
-        $('.main_slider').slick('slickNext');
+    $('.custom_play i:nth-child(2)').on('click', function () {
+        $('.main_slider').slick('slickPlay');
     });
 
 
