@@ -24,7 +24,7 @@ $(function () {
         $('.num').css({ backgroundPositionY: -100 * createNum + "px" });
     });
 
-    //idx : 번호 받아올 때
+    //idx : 번호 받아올때
 
     $('.custom_arrow i:nth-child(1)').on('click', function () {
         $('.main_slider').slick('slickPrev');
@@ -35,7 +35,7 @@ $(function () {
     $('.custom_play i:nth-child(1)').on('click', function () {
         $('.main_slider').slick('slickPrev');
     });
-    $('.custom_play i:nth-child(2)').on('click', function () {
+    $('.custom_play i:nth-child()').on('click', function () {
         $('.main_slider').slick('slickNext');
     });
 
